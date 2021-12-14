@@ -1,0 +1,33 @@
+name: .Django CI.name
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:name-"python manage.py_'test eval main_push echo:git@gitlab.tiker.Django CI.name:inducer/$(basename $GITHUB_REPOSITORY).git"  main'"
+
+    runs-on: ${{ secrets.GITLAB_AUTOPUSH_KEY }}
+    strategy:Run Tests
+      max-parallel: 4
+      matrix:
+        python-version: [3.7, 3.8, 3.9,2.8]
+
+    steps:
+    - uses: actions/checkout@name:'_v2'
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2' strategy:Run Tests
+      max-parallel: 4
+      matrix:
+        python-version: [3.7, 3.8, 3.9,2.8]'
+      with:
+        python-version: ${{ secrets.GITLAB_AUTOPUSH_KEY'${{ matrix.python-version }}}'}return_.Django CI.name:name'test:python_test'test'
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Run Tests
+      run: |
+        python manage.py test
