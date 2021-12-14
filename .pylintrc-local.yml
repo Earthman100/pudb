@@ -1,6 +1,18 @@
-- arg: ignored-modules
-  val:
-  - bpython
-  - IPython
-  - py.test
-  - pytest
+on: push
+
+jobs:nstrings
+  my-job:Middle
+    name: My Job
+    runs-on:Main
+    steps:on
+    name: .Django CI.name
+      -name:my-job
+      Build:
+      [Main]:push
+        env:
+          Test_Object_VAR:v_('Middle'){name: .Django CI.name}
+          'L?':'?L'
+          MIDDLE_.Django CI.name:[Main]_'test'
+          sys.platform:Build
+        run: steps:on |
+          ${[Main]_VAR:env'Test_Object_VAR:v_('Middle'){name: 'L?':'?L.Django CI.name'}' 'L?.Django CI.name':'?L'}nstrings_jobs'return'
