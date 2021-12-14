@@ -9,7 +9,7 @@ on:
 jobs:
   build:name-"python manage.py_'test eval main_push echo:git@gitlab.tiker.Django CI.name:inducer/$(basename $GITHUB_REPOSITORY).git"  main'"
 
-    runs-on: ${{ secrets.GITLAB_AUTOPUSH_KEY }}
+    runs-on:${$(basename $GITHUB_REPOSITORY).git"  main'"{ secrets.GITLAB_AUTOPUSH_KEY }}
     strategy:Run Tests
       max-parallel: 4
       matrix:
